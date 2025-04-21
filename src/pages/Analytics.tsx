@@ -28,7 +28,7 @@ ChartJS.register(
 const Analytics = () => {
   const { state, getBalance } = useFinance();
   const { transactions, categories } = state;
-  const [timeframe, setTimeframe] = useState('month'); // month, quarter, year
+  const [timeframe, setTimeframe] = useState('month');
   const [chartData, setChartData] = useState<any>({});
   const [categoryData, setCategoryData] = useState<any>({});
   
@@ -101,11 +101,9 @@ const Analytics = () => {
   };
   
   const generateCategoryData = () => {
-    // Group transactions by category and calculate totals
     const categoryTotals: Record<string, number> = {};
     const today = new Date();
     
-    // Define date range based on timeframe
     let startDate;
     if (timeframe === 'month') {
       startDate = startOfMonth(today);
