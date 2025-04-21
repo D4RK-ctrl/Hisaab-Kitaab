@@ -15,8 +15,7 @@ Here are some features :-
 
 Here is the overview of the Structure:
 
-Hisaab-Kitaab/
-├── .bolt/        
+Hisaab-Kitaab/   
 ├── src/
 ├── supabase/          
 ├── public/         
