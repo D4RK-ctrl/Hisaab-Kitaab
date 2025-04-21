@@ -24,4 +24,8 @@ Hisaab-Kitaab/
 ├── package.json    
 ├── tailwind.config.js 
 ├── vite.config.ts     
+<<<<<<< HEAD
 └── tsconfig.json   
+=======
+└── tsconfig.json   
+>>>>>>> 966251b9045f91311e63375adaebe0117aff93df
