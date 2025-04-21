@@ -58,7 +58,7 @@ const Transactions = () => {
   };
 
   const getCategoryById = (id: string) => {
-    return categories.find((cat) => cat.id === id) || categories[categories.length - 1]; // fallback to 'Other'
+    return categories.find((cat) => cat.id === id) || categories[categories.length - 1];
   };
 
   const handleAddTransaction = async (transaction: Transaction) => {

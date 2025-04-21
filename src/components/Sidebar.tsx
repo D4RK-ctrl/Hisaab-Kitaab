@@ -39,10 +39,7 @@ const Sidebar = () => {
       </nav>
 
       <div className="px-4 py-4 border-t border-teal-800">
-        <button className="flex items-center w-full px-4 py-3 text-sm font-medium text-teal-100 rounded-md hover:bg-teal-600 hover:text-white transition-colors duration-150 ease-in-out">
-          <Settings className="h-5 w-5 mr-3" />
-          Settings
-        </button>
+          <span><b>By Daksh</b></span>
       </div>
     </div>
   );

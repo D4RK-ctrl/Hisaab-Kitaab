@@ -14,14 +14,12 @@ const Dashboard = () => {
 
   const { total, income, expense } = getBalance();
 
-  // Get most recent transactions (last 5)
   const recentTransactions = [...transactions]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 5);
 
-  // Get category by ID
   const getCategoryById = (id: string) => {
-    return categories.find((cat) => cat.id === id) || categories[categories.length - 1]; // fallback to 'Other'
+    return categories.find((cat) => cat.id === id) || categories[categories.length - 1];
   };
 
   const handleAddTransaction = async (transaction: any) => {
